@@ -4,3 +4,4 @@ redis
 tensorflow
 keras
 joblib
+scikit-learn
