@@ -1,0 +1,14 @@
+def insert_user(conn, smoker, physically_active):
+    with conn.cursor() as cursor:
+        cursor.execute("""
+            INSERT INTO v1.users (smoker, physicallyactivewithin30days)
+            VALUES (%s, %s) RETURNING userid
+        """, (smoker, physically_active))
+        conn.commit()
+        return cursor.fetchone()[0]  # Returns the inserted user's ID
+
+
+def fetch_users(conn):
+    with conn.cursor() as cursor:
+        cursor.execute("SELECT * FROM v1.users")
+        return cursor.fetchall()  # Returns all users
