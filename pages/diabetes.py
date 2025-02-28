@@ -28,7 +28,7 @@ def get_selectbox_indices():
         "Sex": "Whats your sex",
         "Age": "Whats your age group",
         "Education": "Whats your highest Education Level",
-        "Income":"What's your yearly income level"
+        "Income":"What's your Monthly income level"
     }
     options_dict = {
         "HighBP": ["No", "Yes"],
@@ -38,8 +38,8 @@ def get_selectbox_indices():
         "Stroke": ["No", "Yes"],
         "HeartDiseaseorAttack": ["No", "Yes"],
         "PhysActivity": ["No", "Yes"],
-        "Fruits": ["No", "Yes"],
-        "Veggies": ["No", "Yes"],
+        "Fruits": ["Yes", "No"],
+        "Veggies": ["Yes", "No"],
         "HvyAlcoholConsump": ["No", "Yes"],
         "AnyHealthcare": ["No", "Yes"],
         "NoDocbcCost": ["No", "Yes"],
@@ -48,7 +48,7 @@ def get_selectbox_indices():
         "Age": ["18-24", "25-29", "30-35", "36-40", "41-45", "46-50", "50-60", "60+"],
         "Education": ["No schooling", "Middle School/Primary School", "Technical/Vocational School", "High School",
                       "College graduate", "Masters Graduate/Doctorate", "PHD Graduate"],
-        "Income": ["<$10k", "$10k-$20k", "$21k-$40k", "$41k-$60k", "$61k-$65k", "$66k-$69k", "$70k-$75k", "$75k+"]
+        "Income": ["<₦10k", "₦10k-₦20k", "₦21k-₦40k", "₦41k-₦60k", "₦61k-₦65k", "₦66k-₦69k", "₦70k-₦75k", "₦75k+"]
     }
     
     # Get the indices of selected options
@@ -70,10 +70,10 @@ def get_selectbox_indices():
 # Call the function to get selected indices
 
 st.number_input(label="How much do you weigh",min_value=10,step=1,max_value=1000,key="weight")
-st.number_input(label="How tall are you in feet",step=1,min_value=10,max_value=1000,key="height")
+st.number_input(label="How tall are you in feet",step=1,min_value=1,max_value=14,key="height")
 
 st.select_slider(
-    label="Rate How Healthy you feel on a scale of 1 through 10 and 10 is for very healthy and physically fit 1 is for not really healthy or physically fit",
+    label="Rate How Unhealthy you feel on a scale of 1 through 10 and 1 is for very healthy and physically fit 10 is for not really healthy or physically fit",
     options=[1,2,3,4,5,6,7,8,9,10],
     key="GenHlth"
 )

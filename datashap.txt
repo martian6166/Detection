@@ -1,3 +1,5 @@
+Diabetes data Shape
+___________________________________
 HighBP – High blood pressure (1 = Yes, 0 = No)
 HighChol – High cholesterol (1 = Yes, 0 = No)
 CholCheck – Cholesterol checked in the last 5 years (1 = Yes, 0 = No)
@@ -19,3 +21,19 @@ Sex – 1 = Female, 0 = Male
 Age – Age group (numeric encoding, e.g., 1 = 18-24, 2 = 25-29, etc.)
 Education – Education level (numeric encoding, e.g., 1 = No schooling, 2 = High school, etc.)
 Income – Income level (numeric encoding, e.g., 1 = <$10k, 2 = $10k-$20k, etc.)
+
+
+Cardio Vascular Disease data Shape
+___________________________________
+
+Age (days) – 50 (but should be in days, e.g., 50 * 365 if 50 years old)
+Gender – 1 (1 = Female, 2 = Male)
+Height (cm) – 160
+Weight (kg) – 70
+Systolic blood pressure – 120
+Diastolic blood pressure – 80
+Cholesterol – 1 (1 = Normal, 2 = Above normal, 3 = Well above normal)
+Glucose – 0 (1 = Normal, 2 = Above normal, 3 = Well above normal)
+Smoking – 0 (0 = Non-smoker, 1 = Smoker)
+Alcohol intake – 1 (0 = No, 1 = Yes)
+Physical activity – 1 (0 = No, 1 = Yes)
