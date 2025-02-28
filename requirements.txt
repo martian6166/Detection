@@ -3,3 +3,4 @@ python-dotenv
 redis
 tensorflow
 keras
+joblib
