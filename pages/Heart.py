@@ -1,5 +1,5 @@
 from tensorflow.keras.models import load_model # type: ignore
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+
 import joblib
 import numpy as np
 import pandas as pd
