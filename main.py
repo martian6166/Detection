@@ -1,6 +1,6 @@
 import streamlit as st
 import sqlite3
-st.set_page_config('Disease Detection', '🍪', layout='wide',menu_items=None,initial_sidebar_state='collapsed')
+st.set_page_config('Disease Detection', '🍪', layout='wide',menu_items=None,initial_sidebar_state='expanded')
    
 
 if "authType" not in st.session_state:
