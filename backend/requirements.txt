@@ -1,0 +1,4 @@
+fastapi[all]
+bson
+pymongo
+bcrypt
