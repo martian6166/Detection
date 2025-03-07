@@ -75,8 +75,7 @@ def create_user(db_uri: str, db_name: str, collection_name: str, document: dict)
     # Close the connection
     
 
-def login_user(db_uri: str, db_name: str, collection_name: str, document: dict) -> str:
-    streaks_doc={}
+def login_user(db_uri: str, db_name: str, collection_name: str, document: dict) :
     """
     Inserts a new document into the specified MongoDB collection.
 
@@ -95,17 +94,17 @@ def login_user(db_uri: str, db_name: str, collection_name: str, document: dict) 
     collection = db[collection_name]
     
     # Insert the document
-    s = collection.find_one({"email":document["email"]})
+    s = collection.find_one({"username":document["username"]})
     print(s)
-    print(document.get('email'))
+    print(document.get('username'))
     if s==None:
-        return False
+        return {False,True}
     else:
 
         if check_password(password=document['password'],hashed_password=s['password']):
 
-            return str(s['_id'])
+            return {str(s['_id']),s['username']}
         else:
-            return False
+            return {False,True}
     # Close the connection
     
