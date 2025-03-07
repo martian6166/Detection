@@ -1,8 +1,4 @@
 
-    
-from bson import ObjectId
-import json
-import requests
 from pymongo import MongoClient
 
 import bcrypt
