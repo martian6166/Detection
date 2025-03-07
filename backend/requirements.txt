@@ -1,5 +1,4 @@
 fastapi[all]
-bson
 pymongo
 bcrypt
 absl-py
