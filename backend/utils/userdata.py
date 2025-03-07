@@ -57,7 +57,7 @@ def create_user(db_uri: str, db_name: str, collection_name: str, document: dict)
     db = client[db_name]
     collection = db[collection_name]
     # Insert the document
-    s = collection.find_one({"email":document.get('email')})
+    s = collection.find_one({"username":document.get('username')})
     password = hash_password(document.get('password'))
     document['password']= password
     if s==None:
