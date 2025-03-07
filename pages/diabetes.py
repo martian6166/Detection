@@ -8,7 +8,16 @@ import pandas as pd
 st.set_page_config(page_title="Diabetes Prediction",page_icon="🍧")
 
 st.title("Fill in the form to make a prediction")
+if "userID" not in st.session_state:
+    st.session_state.userID = None  
+        
+if "auth_timer" not in st.session_state:
+    st.session_state.auth_timer = 1
 
+
+
+if st.session_state.userID ==None:
+    st.switch_page("main.py")
 def get_selectbox_indices():
     # Define the options for each selectbox
     label_dict = {
@@ -242,3 +251,4 @@ if st.button("Make a prediction"):
     for i in range(int(percentage_of_diabetes)):
         progress.progress(i + 1)
         time.sleep(0.02) 
+        

@@ -109,7 +109,7 @@ def login():
         col1, col2 = st.columns(2,gap='small',border=True,vertical_alignment='center')
         with col1:
             if st.button("Submit"):
-                st.session_state.userID = signUp_func(signup_url,st.session_state.firstName,st.session_state.lastName,st.session_state.username,st.session_state.password)
+                st.session_state.userID = signUp_func(signup_url,st.session_state.fistName,st.session_state.lastName,st.session_state.username,st.session_state.password)
                 if st.session_state.userID:
                     st.session_state.auth_timer=100000
                     st.switch_page(page="pages/diabetes.py")
