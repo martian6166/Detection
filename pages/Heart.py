@@ -1,3 +1,13 @@
+import streamlit as st
+from auth import get_auth
+import pandas as pd
+import joblib
+
+if 'authentication_status' not in st.session_state or not st.session_state.authentication_status:
+    st.warning("Please login from main app")
+    st.stop()
+
+
 from tensorflow.keras.models import load_model # type: ignore
 
 import joblib
