@@ -1,0 +1,20 @@
+/* Modern gradient background */
+.stApp {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Card styling */
+.feature-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    background: white;
+    margin-bottom: 1.5rem;
+}
+
+/* Button enhancements */
+.stButton>button {
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
