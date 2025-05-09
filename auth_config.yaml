@@ -1,0 +1,19 @@
+cookie:
+  expiry_days: 30
+  key: your-unique-secret-key-123
+  name: ckd_app_cookie
+credentials:
+  usernames:
+    admin:
+      email: admin@example.com
+      name: Admin
+      password: $2b$12$EEIxSExQEAL9HY.rGb9wa.QktnIVZXMensZ6cVHgxaEPWLRPYk6CW
+    neche:
+      email: nechestar@gmail.com
+      name: neche
+      password: $2b$12$bPkn1mc/VswQ1yW0xhhR/O9MtCtLxiSA0iUxYVTP8L9lj4T2O5LYi
+    oluoma:
+      email: nechestar@gmail.com
+      name: oluoma
+      password: $2b$12$PQfXezyD.sgaM1uaK1lg3.zpHo79tICX3.2Gfl3WRWprFx4oNeuKS
+preauthorized: false
